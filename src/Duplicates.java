@@ -10,27 +10,17 @@
 import java.util.*;
 public class Duplicates {
     public static int removeDups( int[] arr){
-        int j = 0;
+        int j = 0;// keeps count for when remove
         for(int i = 0; i < arr.length; i++){
             if(i+1 == arr.length || arr[i] != arr[i+1]){
                 arr[j] = arr[i];
                 j++;
             }
         }
-        int count= 1;
-        for(int k = 1; k < arr.length; k++){
-            if(arr[k] != 0)
-                count++;
-            else
-                break;
         }
         for(int l = j;l< arr.length;l++){
             arr[l]=0;
         }
-        /**for(int i =0;i< temp.length; i++){
-            arr[i] = temp[i];
-        }
-         **/
         return j;
     }
     public static void main(String[] args){
