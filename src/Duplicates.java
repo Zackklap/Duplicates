@@ -8,6 +8,8 @@
  *   email: Zackklap@bu.edu
  */
 import java.util.*;
+// this takes in an array and returns the duplicates. it gives you the length of the array and then returns the length.
+//it has a complexity of O(n) and a memory complexity of O(1)
 public class Duplicates {
     public static int removeDups( int[] arr){
         int j = 0;// keeps count for when remove
@@ -16,10 +18,6 @@ public class Duplicates {
                 arr[j] = arr[i];
                 j++;
             }
-        }
-        }
-        for(int l = j;l< arr.length;l++){
-            arr[l]=0;
         }
         return j;
     }
