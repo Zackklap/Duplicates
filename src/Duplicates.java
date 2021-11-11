@@ -1,3 +1,12 @@
+/*
+ * Duplicates.java
+ *
+ * Computer Science 112, Boston University
+ * 
+ * modified by:
+ *   name: Zack Klappenbach, Sophie
+ *   email: Zackklap@bu.edu
+ */
 import java.util.*;
 public class Duplicates {
     public static int removeDups( int[] arr){
